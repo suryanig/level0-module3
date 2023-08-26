@@ -1,15 +1,23 @@
 import turtle
 
 if __name__ == '__main__':
-    my_turtle = turtle.Turtle()
-    my_turtle.shape('turtle')
-    my_turtle.color('blue', 'green')
-    my_turtle.speed(100)
+    mrgreen = turtle.Turtle()
+    mrgreen.shape('turtle')
+    mrgreen.color('blue', 'green')
+    mrgreen.speed(100)
 
     # TODO 1) Set the X position of the turtle so that it starts on the left.
-
+    mrgreen.penup()
+    mrgreen.goto(-350,0)
+    mrgreen.pendown()
     # TODO 2) Make the turtle draw a star shape. Hint: angle=144.
-
+    for i in range (10):
+        for x in range (5):
+            mrgreen.forward(30)
+            mrgreen.right(144)
+        mrgreen.penup()
+        mrgreen.goto(-350+i*50, 0)
+        mrgreen.pendown()
     # TODO 3) Set the length of each line in the star to 30
 
     # TODO: CHALLENGE

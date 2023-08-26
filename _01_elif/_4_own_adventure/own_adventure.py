@@ -30,6 +30,12 @@ if __name__ == '__main__':
         if job == 1:
             type = simpledialog.askinteger(title="What type of music do you sing?", prompt="Do you want ot be 1) a pop singer, or 2) a country singer?")
             if type == 1:
-                messagebox.showinfo(message = "Congratulations! You are a successful singer that even Taylor Swift is jealous of.")
+                messagebox.showinfo(message="Congratulations! You are a successful singer that even Taylor Swift is jealous of.")
             elif type == 2:
                 messagebox.showinfo(message="Congratulations! Because you are a country singer and no one likes that, you don't get enough money to get by.")
+        elif job == 2:
+            actor = simpledialog.askinteger(title='How old of an actor are you?', prompt="Do you want to be 1) a child actor, or 2) an adult actor?")
+            if actor == 1:
+                messagebox.showinfo(message="Congratulations! You starred in a few Disney Channel shows before growing up to be a complete weirdo. I hope you are proud of yourself.")
+            elif actor == 2:
+                messagebox.showinfo(message="Congratulations! You starred in the hit action + romance movie which became a hit, so you are doing very well in life.")
