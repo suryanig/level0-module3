@@ -8,17 +8,25 @@ def setup():
 def draw():
     
     # First run the program and you should see a flower.  
-  
+    x = 0
+    y = 0
   
     # Then, use a loop to make a body for the Bee! 
     # (see the image on the recipe, it's a diagonal line of circles)
     # Use modulo to make the colors alternate between yellow and black
+    for i in range (34):
+        ellipse (x,y,60,60)    
+        x = x+13.5
+        y = y+13.5
     
-
+        if i%2 == 0:
+            fill (0,0,0)
+        else:
+            fill (255,251,28)
 
 
     # Now put his head on using draw_bee_face(x,y)
-    
+    draw_bee_face(x,y)
 
     pass
 
